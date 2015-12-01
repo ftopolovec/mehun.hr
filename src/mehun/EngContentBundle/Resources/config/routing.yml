@@ -1,0 +1,71 @@
+mehun_eng_content_cms_pageeng:
+    resource: "@mehunEngContentBundle/Resources/config/routing/pageeng.yml"
+    prefix:   /cms/pageeng
+
+mehun_eng_content_cms_categoryeng:
+    resource: "@mehunEngContentBundle/Resources/config/routing/categoryeng.yml"
+    prefix:   /cms/categoryeng
+
+mehun_eng_content_homepage:
+    path: /eng
+    defaults: { _controller: mehunEngContentBundle:Default:index }
+
+mehun_eng_content_page_display:
+    path: /eng/pageeng/{id}
+    defaults: { _controller: mehunEngContentBundle:Default:display }
+
+about:
+    path: /eng/about
+    defaults: { _controller: mehunEngContentBundle:Default:about }
+
+repairs:
+    path: /eng/repairs
+    defaults: { _controller: mehunEngContentBundle:Default:repairs }
+
+cad_cam_eng:
+    path: /eng/cad_cam_eng
+    defaults: { _controller: mehunEngContentBundle:Default:cad_cam }
+
+wax_up_eng:
+    path: /eng/wax_up
+    defaults: { _controller: mehunEngContentBundle:Default:wax_up }
+
+smile_design_eng:
+    path: /eng/smile_design
+    defaults: { _controller: mehunEngContentBundle:Default:smile_design }
+
+gallery:
+    path: /eng/gallery
+    defaults: { _controller: mehunEngContentBundle:Default:gallery }
+
+partners:
+    path: /eng/partners
+    defaults: { _controller: mehunEngContentBundle:Default:partners }
+
+pricelist:
+    path: /eng/pricelist
+    defaults: { _controller: mehunEngContentBundle:Default:pricelist }
+
+certificates:
+    path: /eng/certificates
+    defaults: { _controller: mehunEngContentBundle:Default:certificates }
+
+quality_policy:
+    path: /eng/quality_policy
+    defaults: { _controller: mehunEngContentBundle:Default:quality_policy }
+
+technical_documentation:
+    path: /eng/technical_documentation
+    defaults: { _controller: mehunEngContentBundle:Default:technical_documentation }
+
+questionnaire:
+    path: /eng/questionnaire
+    defaults: { _controller: mehunEngContentBundle:Default:questionnaire }
+
+contact:
+    path: /eng/contact
+    defaults: { _controller: mehunEngContentBundle:Default:contact }
+
+contact_form:
+    path: /eng/contact_form
+    defaults: { _controller: mehunEngContentBundle:Default:contact }

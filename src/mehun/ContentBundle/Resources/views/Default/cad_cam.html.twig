@@ -1,0 +1,61 @@
+{% extends '::base.html.twig' %}
+{% block title %}CAD/CAM | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, CAD/CAM, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">CAD/CAM</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Usluge </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> CAD/CAM </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+                <!-- Tekst
+               ================================================== -->
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>"Dizajnirano i proizvedeno uz pomoć kompjutora", moglo bi se slobodno prevesti kraticu CAD CAM. Naš je laboratorij opremljen dvama sistemima iz linije Cercon brain. To nam omogućava samostalno produciranje cirkon oksidnih krunica, mostova, individualnih nadogradnji za nekoliko implantoloških sistema te teleskop kruna iz strogo kontroliranog i patentima zaštićenog materijala Cercon jednog od vodećih svjetskih proizvođača strukturne keramike njemačko-američke korporacije <strong><a target="_blank" href="http://www.densply.com">Dentsply</a></strong>. <br>
+                            <br>
+                            Kolege <strong>Ante Bubalo</strong> i <strong>Kristijan Mehun</strong> školovani su u Njemačkoj za poslove vezane uz CAD CAM. <br>
+                            <br>
+                            U ponudi osim konstrukcija za oblaganje keramikom imamo i strukturnu keramiku u punom obliku tzv. Full anatomic HT Cercon. Prednost ove tehnike je što zahtijeva minimalnu invazivnu preparaciju, a daje visokofuncionalne nadomjestke. Posebno je primjenjiva kod  restauracije postraničnih zuba.<br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="images/cad_cam.jpg" alt="cad cam"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Kontaktirajte nas! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Pošaljite upit putem<a href="{{ path('kontakt') }}"> kontakt obrasca</a> </p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

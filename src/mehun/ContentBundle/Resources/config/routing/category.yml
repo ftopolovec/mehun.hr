@@ -1,0 +1,30 @@
+cms_category:
+    path:     /
+    defaults: { _controller: "mehunContentBundle:Category:index" }
+
+cms_category_show:
+    path:     /{id}/show
+    defaults: { _controller: "mehunContentBundle:Category:show" }
+
+cms_category_new:
+    path:     /new
+    defaults: { _controller: "mehunContentBundle:Category:new" }
+
+cms_category_create:
+    path:     /create
+    defaults: { _controller: "mehunContentBundle:Category:create" }
+    methods:  POST
+
+cms_category_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "mehunContentBundle:Category:edit" }
+
+cms_category_update:
+    path:     /{id}/update
+    defaults: { _controller: "mehunContentBundle:Category:update" }
+    methods:  [POST, PUT]
+
+cms_category_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "mehunContentBundle:Category:delete" }
+    methods:  [POST, DELETE]

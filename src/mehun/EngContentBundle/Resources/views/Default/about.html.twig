@@ -1,0 +1,99 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">About us</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="{{ path('mehun_eng_content_homepage') }}"> Home </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> About us </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Manja galerija
+           ================================================== -->
+            <div class="clearfix">
+                <div class="gallery_item_details_list clearfix page_margin_top">
+                    <div class="gallery_item_details clearfix">
+                        <div class="columns no_width">
+                            <div class="column_left">
+                                <div class="gallery_box">
+                                    <ul class="image_carousel">
+                                        <li class="current_slide"> <img src="{{ asset('images/laboratorij/laboratorij-mehun1.jpg') }}" alt=""/>
+                                            <ul class="controls">
+                                                <li> <a href="{{ asset('images/laboratorij/laboratorij-mehun1.jpg') }}" rel="data-gallery" class="fancybox open_lightbox"></a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <img src="{{ asset('images/laboratorij/laboratorij-mehun2.jpg') }}" alt=""/>
+                                            <ul class="controls">
+                                                <li> <a href="{{ asset('images/laboratorij/laboratorij-mehun2.jpg') }}" rel="data-gallery" class="fancybox open_lightbox"></a> </li>
+                                            </ul>
+                                        </li>
+
+                                        <li> <img src="{{ asset('images/laboratorij/laboratorij-mehun3.jpg') }}" alt=""/>
+                                            <ul class="controls">
+                                                <li> <a href="{{ asset('images/laboratorij/laboratorij-mehun3.jpg') }}" rel="data-gallery" class="fancybox open_lightbox"></a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Tekst
+                            ================================================== -->
+                            <!-- Stupac desno od galerije-->
+                            <div class="column_right">
+                                <div class="details_box">
+                                    <h2> Mehun d.o.o. </h2>
+                                    <p> Health service company with a dental technique laboratory Mehun d.o.o. is one of the first among such companies in Croatia. <strong>We started out in 1992 and our wish was to apply our acquirement and practical knowledge in a best possible way.</strong> Since that time we can be proud of many of our high quality works. The best confirmation for that comes from our associates and it can be seen in thousands smiles on our satisfied patients' faces. </p>
+                                    <h3 class="box_header margin_top_10"> Who are we? </h3>
+                                    <p>We are a small team of people who serve you through their profession and their work. We are divided by specializations and we strive to do a good work. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns full_width">
+                    <!-- Stupac niže lijevo-->
+                    <div class="column_left">
+                        <p>MEHUN d.o.o. has 14 employees and as such it is considered as a small firm. For 22 years, our employees have been going through permanent training, development and education in different areas of dental technique. Therefore, they are capable to solve the biggest challenges, whether in processes and approaches to making dental prosthetic replacements or in materials that are being used. We follow the latest achievements and with our equipement and competence we are at the highest level of dental technique, in areas which we cover with our work. Owner of our firm, Mr <strong>Darko Mehun</strong>, and our laboratory manager, Ms <strong>Sanja Ciberlin</strong>, cooperate with some of the most important experts, their approach to all recent scientific methods is open and evident and their experience is rich and wide. All of that enables our co-workers and associates an individual approach in resolving different cases and also, they can always get a good and professional advice. </p>
+                    </div>
+
+                    <!-- Stupac niže desno-->
+                    <div class="column_right">
+                        <p>In the past few years, the firm is particularly interested in non-metal solutions and materials which are the least uncomfortable for the patients, but also for dentists. <br>
+                            <br>
+                            Our laboratory employees are capable to carry out and accomplish every required job – <strong>from whitening foils through anti-snoring device to the most complicated implant works with all materials: base metals, plates, zircon-oxides, titanium. Laboratory's specialty is making facial epithesis, nose and ear prosthetic, etc.</strong> Along with basic services, interests of our firm are also extended to education. <br>
+                        </p>
+                    </div>
+                    <!-- Stupac BIO-->
+                    <div class="column_left page_margin_top clearfix">
+                        <ul class="column_left">
+                            <h4 class="box_header"> About our director and about our laboratory manager </h4>
+                            <li class="item_content clearfix"> <a class="features_image" title="Darko Mehun"> <img src="{{ asset('images/darko_mehun.jpg') }}" alt="Darko Mehun" /> </a>
+                                <div class="bio"> <strong>Darko Mehun, director</strong><br>
+                                    <br>
+                                    He has been practicing dental technique since 1981. 11 years later he became an owner of a dental laboratory. During 1990's he was intensively involved in education in different areas of dental technique. In 1998 he signed his first contract with Degussa dental company and with that he became a demonstrator of company's alloy products, all sorts of ceramics and snythetic resins. In 2003, he starts to cooperate with DeguDent company, and since 2013 he has been OPL for a complete Dentsply production program, with an emphasis on CAD CAM technology. He has also been a technical advisor for a whole area from Poland to Israel. He is fluent in several languages and, as a lecturer, he has been participating on congresses and workshops in Southeastern Europe. Knowledge and experience that he gained through his work and education he shares with his colleagues and he helps with development and better work quality in his profession. </div>
+                            </li>
+                            <li class="item_content clearfix"> <a class="features_image" title="Sanja Ciberlin"> <img src="{{ asset('images/sanja_ciberlin.jpg') }}" alt="Sanja Ciberlin" /> </a>
+                                <div class="bio"> <strong>Sanja Ciberlin, manager</strong><br>
+                                    <br>
+                                    She had a short experience as a dental techician at "Perkovčeva" Dental Polyclinic. Since 1994, for some time she was an associate at a dental laboratory and later, since 2005 also at our firm "Mehun d.o.o.". Through first ten years of 2000's she went through intensive education in dental ceramics and gnatology areas and she became a specialist for dental ceramics. In 2007, with her serious approach to work, she became assistant manager. Since 2013 her position has been a manager at our laboratory. Twenty years of experience and devotion to her work enable her to solve the most difficult cases with easiness and fluency.  </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Slika desno
+                    ================================================== -->
+                    <div class="column_right"> <img src="{{ asset('images/organizational_structure.png') }}" alt="Organizational structure" /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

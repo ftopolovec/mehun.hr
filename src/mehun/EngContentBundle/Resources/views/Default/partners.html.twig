@@ -1,0 +1,58 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+<!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Partners</h1>
+          <ul class="bread_crumb">
+            <li> <a href="{{ path('mehun_eng_content_homepage') }}"> Home </a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Partners </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Tekst
+================================================== -->
+      <div>
+        <div class="page_left page_margin_top">
+          <div class="column_left">
+            <p> We have partners with whom we have been cooperating for a long time. Basis for that cooperation is a consistent high quality of our products and services. A good collaboration between dentists and dental technicians is necessary if we want good quality results. Also, it shortens required time for making a prosthetic work.<br>
+              <br>
+              Professionalism and quality of service that have been a part of Mehun d.o.o. dental laboratory's work through all these years, are available for all interested dental practices. Longtime successful cooperations are a guarantee for good relations and business culture with our partners and colleagues who understand value of a good quality dental technique. <strong>We want to continue our development together with our permanent and occasional partners and we are thankful for their cooperation. But we also want to grow together with our future partners who will recognize the importance of dental technique services on the highest level and all for the benefit of their patients</strong>. </p>
+            <p><strong>A partners/associates list of the Mehun d.o.o. dental laboratory is available to read/download in <a target="_blank" href="{{ asset('pdf/mehun_lista_partnera.pdf') }}">PDF format.</a></strong></p>
+          </div>
+        </div>
+      </div>
+
+<!-- Kontakt info box
+================================================== -->
+      <div class="page_right page_margin_top">
+        <ul>
+          <li class="home_box green">
+            <h2> <a href="{{ path('contact') }}" title="Contact"> Location and contact </a> </h2>
+            <div class="news clearfix">
+              <p class="text"> Ivana Mazuranica 70, 42000 Varazdin<br>
+                Phone: +385 42 240 366<br>
+                Mobile phone: +385 98 267 140<br>
+                Fax: +385 42 204 860</p>
+            </div>
+          <li class="sidebar_box">
+            <ul class="contact_data">
+              <li class="clearfix"> <span class="social_icon mail"></span>
+                <p class="value"> e-mail: info@mehun.hr </p>
+              </li>
+              <li class="clearfix"> <span class="social_icon form"></span>
+                <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

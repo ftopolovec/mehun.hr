@@ -1,0 +1,64 @@
+{% extends '::base.html.twig' %}
+{% block title %}PARTNERI | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, partneri, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Partneri</h1>
+          <ul class="bread_crumb">
+            <li> <a href="{{ path('mehun_content_homepage') }}"> Naslovna </a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Partneri </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Tekst
+================================================== -->
+      <div>
+        <div class="page_left page_margin_top">
+          <div class="column_left">
+            <p> Temelj naše dugoročne suradnje sa partnerima je konzistentna visoka kvaliteta naših proizvoda i usluga. Dobra suradnja dentalnih liječnika i zubotehničara neophodna je za kvalitetne rezultate i u svakom će slučaju skratiti vrijeme izrade protetskog rada.<br>
+              <br>
+              Profesionalnost i kvaliteta usluga kakve zubotehnički laboratorij Mehun d.o.o. gradi kroz čitavi poslovni vijek godina na raspolaganju su svim zainteresiranim dentalnima praksama. Dugogodišnje uspješne suradnje jamstvo su dobrih odnosa i poslovne kulture s partnerima - kolegama koji shvaćaju vrijednost kvalitne zubotehnike. <strong>Želimo se i dalje razvijati uz stalne i povremene partnere kojima ovim putem zahvaljujemo na suradnji, ali i rasti sa svim budućima koji će za dobrobit svojih pacijenata prepoznati važnost zubotehničkih usluga visoke razine. <br>
+              </strong></p>
+            <p><strong>Listu partnera-suradnika zubotehničkog laboratorija Mehun d.o.o. možete pregledati i/ili preuzeti <a target="_blank" href="{{ asset('pdf/mehun_lista_partnera.pdf') }}">u PDF formatu.</a></strong></p>
+          </div>
+        </div>
+      </div>
+
+<!-- Kontakt info box
+================================================== -->
+      <div class="page_right page_margin_top">
+        <ul>
+          <li class="home_box green">
+            <h2> <a href="{{ path('kontakt') }}" title="Kontakt"> Lokacija i kontakt </a> </h2>
+            <div class="news clearfix">
+              <p class="text"> Ivana Mažuranića 70, 42000 Varaždin<br>
+                Tel.: +385 42 240 366<br>
+                Mob.: +385 98 267 140<br>
+                Fax: +385 42 204 860</p>
+            </div>
+          <li class="sidebar_box">
+            <ul class="contact_data">
+              <li class="clearfix"> <span class="social_icon mail"></span>
+                <p class="value"> e-mail: info@mehun.hr </p>
+              </li>
+              <li class="clearfix"> <span class="social_icon form"></span>
+                <p class="value"> Pošaljite upit putem<a href="{{ path('kontakt') }}"> kontakt obrasca</a> </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

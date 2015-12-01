@@ -1,0 +1,83 @@
+{% extends '::base.html.twig' %}
+{% block title %}KONTAKT | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, kontakt, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Kontakt</h1>
+          <ul class="bread_crumb">
+            <li> <a href="{{ path('mehun_content_homepage') }}" title="Naslovna"> Naslovna </a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Kontakt </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Tekst
+================================================== -->
+      <div class="page_margin_top clearfix">
+        <div class="page_left">
+          <h3 class="box_header margin_top_10"> Kontakt obrazac - pošaljite nam upit </h3>
+          <div class="page_left">
+            <p class="text"> Ukoliko imate bilo kakvo pitanje ili su vam potrebne informacije, ispunite obrazac za kontakt, <br> a mi ćemo se potruditi da odgovorimo u najbržem mogućem roku. </p>
+          </div>
+
+<!-- Kontakt obrazac
+================================================== -->
+        {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="alert alert-{{ label }}">
+                    {{ flash }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        {{ form(form) }}
+
+        </div>
+
+
+<!-- Kontakt info
+================================================== -->
+        <div class="page_right">
+          <h3 class="box_header margin_top_10"> MEHUN d.o.o. </h3>
+          <p> Poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija </p>
+          <ul class="contact_data page_margin_top">
+            <li class="clearfix">
+              <p class="value"> <strong>Adresa:</strong><br>
+                Ivana Mažuranića 70,  Varaždin, Hrvatska </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> Tel. | <strong>+385 42 240 366</strong><br>
+                Mob. | <strong>+385 98 267 140 </strong><br>
+                Fax | <strong>+385 42 204 860</strong><br>
+                E-mail | <strong>info@mehun.hr</strong> </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> <strong>Radno vrijeme:</strong><br>
+                Pon. - Čet. | 8:00 - 20:00<br>
+                Petak | 8:00 - 15:00<br>
+              </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> <strong>OIB</strong>: 56146674125<br>
+                <strong>MBS</strong>: 01984047<br>
+                <strong>Žiro račun</strong>: Hypo Alpe Adria Bank d.d. <br>
+                2500009-1101204849<br>
+                <strong>IBAN</strong>: HR3425000091101204849 </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact_map page_margin_top html" id="map"> </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends '::base.html.twig' %}
+{% block title %}NASLOVNA | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Glavni slider
+================================================== -->
+    <ul class="slider">
+        <li style="background-image: url('images/slider/img1.jpg');"> &nbsp; </li>
+        <li style="background-image: url('images/slider/img2.jpg');"> &nbsp; </li>
+        <li style="background-image: url('images/slider/img3.jpg');"> &nbsp; </li>
+        <li style="background-image: url('images/slider/img5.jpg');"> &nbsp; </li>
+        <li style="background-image: url('images/slider/img6.jpg');"> &nbsp; </li>
+        <li style="background-image: url('images/slider/img4.jpg');"> &nbsp; </li>
+    </ul>
+
+    <!-- Sadržaj slidera -->
+    <div class="page relative noborder">
+        <div class="slider_content_box clearfix">
+            <div class="slider_content" style="display: block;">
+                <h1 class="title"> Dobrodošli </h1>
+                <h2 class="subtitle"> na web stranice dentalnog<br />
+                    laboratorija Mehun d.o.o. </h2>
+            </div>
+            <div class="slider_content">
+                <h1 class="title"> Pratimo<br />
+                    trendove </h1>
+                <h2 class="subtitle"> i zadovoljavamo najviše standarde<br />
+                    suvremene dentalne medicine. </h2>
+            </div>
+            <div class="slider_content">
+                <h1 class="title"> Proizvodi i usluge<br />
+                    visoke kvalitete </h1>
+                <h2 class="subtitle">Osigurati zahtijevanu kvalitetu<br />
+                    prioritet je naše tvrtke i svih njenih zaposlenika.
+                </h2>
+            </div>
+
+            <div class="slider_content">
+                <h1 class="title">BioHPP</h1>
+                <h2 class="subtitle">Novi materijal u našem laboratoriju
+                </h2>
+            </div>
+
+            <div class="slider_content">
+                <h4 class="title">Zašto BioHPP?</h4>
+                <h2 class="subtitle">Jer je biokompatibilan!<br />
+                    Jer je lagan!<br />
+                    Jer je fiziološki bolji od metala!<br />
+                    Jer je „High Performance Polymer“!<br />
+                    Jer čini razliku u ustima!<br />
+                    Jer mu je elastičnost i čvrstoća<br />ista kao kod ljudske kosti!
+                </h2>
+            </div>
+
+            <div class="slider_content">
+                <h1 class="title">Kontaktirajte nas<br />
+                    s povjerenjem! </h1>
+            </div>
+        </div>
+
+        <!-- Home boxes
+        ================================================== -->
+        <ul class="home_box_container clearfix">
+            <!-- Prva-->
+            <li class="home_box orange">
+                <h2> <a href="{{ path('o_nama') }}" title="Tko smo?"> Tko smo? </a> </h2>
+                <div class="news clearfix">
+                    <p class="text"> Poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija Mehun d.o.o. među prvima je takve vrste u Hrvatskoj. Započeli smo još davne 1992. godine u želji... </p>
+                    <a class="more light icon_small_arrow margin_right_white" href="{{ path('o_nama') }}" title="Više">Pročitajte više</a> </div>
+            </li>
+            <!-- Druga -->
+            <li class="home_box grey">
+                <h2> <a href="{{ path('kontakt') }}" title="Kontakt"> Lokacija i kontakt </a> </h2>
+                <div class="news clearfix">
+                    <p class="text"> Ivana Mažuranića 70, 42000 Varaždin <br>
+                        Tel.: +385 42 240 366<br>
+                        Mob.: +385 98 267 140<br>
+                        Fax: +385 42 204 860</p>
+                    <a class="more light icon_small_arrow margin_right_white" href="{{ path('kontakt') }}" title="Kontakt">Kontaktirajte nas</a> </div>
+            </li>
+            <!-- Treća -->
+            <li class="home_box green">
+                <h2> Radno vrijeme </h2>
+                <ul class="items_list thin dark_blue opening_hours">
+                    <li class="clearfix"> <span>Ponedjeljak - Četvrtak </span>
+                        <div class="value"> 8:00 - 20:00 </div>
+                    </li>
+                    <li class="clearfix"> <span> Petak </span>
+                        <div class="value"> 8:00 - 15:00 </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Linija
+        ================================================== -->
+        <div class="crta page_margin_top_section clearfix"> </div>
+        <div id="certifikati">
+            <div class="clearfix tabs page_margin_top">
+                <h1>Blog</h1>
+                <div class="header_right"> <a href="#" id="certifikati_prev" class="scrolling_list_control_left icon_small_arrow left_black"></a> <a href="#" id="certifikati_next" class="scrolling_list_control_right icon_small_arrow right_black"></a>
+                </div>
+            </div>
+            <ul class="gallery horizontal_carousel certifikati">
+            {% for page in pages|reverse %}
+                <li class="gallery_box">
+                    <ul class="home_box_container clearfix">
+                        <!-- Prva-->
+                        <li class="home_box orange">
+                            <h2><a href="{{ path ('mehun_content_page_display', {id: page.id}) }}">{{ page.title }}</a></h2>
+                            <div class="news clearfix">
+                                <p class="text blog_white_text">{{ page.abstract }}... <a class="more light icon_small_arrow margin_right_white" href="{{ path ('mehun_content_page_display', {id: page.id}) }}" title="Kontakt">Pročitaj više</a></div>
+                        </li>
+                    </ul>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="page relative">
+            <div class="page_layout page_margin_top clearfix"> </div>
+        </div>
+        <!-- Stupci/Ikone
+       ================================================== -->
+        <div class="clearfix">
+            <div class="columns columns_3 page_margin_top clearfix">
+                <!-- Prvi stupac/ikona -->
+                <ul class="column">
+                    <li class="item_content clearfix"> <a class="features_image" href="{{ path('politika_kvalitete') }}" title=""> <img src="images/ikone/iso.png" alt="TÜV certifikat" /> </a>
+                        <div class="text">
+                            <h3>ISO 9001:2008 </h3>
+                            Rad u skladu sa zahtjevima međunarodne norme EN ISO 9001:2008 dokaz je kvalitete naših proizvoda, usluga i procesa unutar tvrtke. <a href="{{ path('politika_kvalitete') }}"> Više &rarr; </a> </div>
+                    </li>
+                </ul>
+                <!-- Drugi stupac/ikona -->
+                <ul class="column">
+                    <li class="item_content clearfix"> <a class="features_image" href="{{ asset('pdf/mehun_katalog.pdf') }}" target="_blank" title=""> <img src="images/ikone/katalog.png" alt="Mehun d.o.o. katalog proizvoda" /> </a>
+                        <div class="text">
+                            <h3>Katalog proizvoda </h3>
+                            Pregledajte katalog naših proizvoda. Sve fotografije originalni su radovi i rezultat suradnje stomatoloških ordinacija i našeg laboratorija<a href="{{ asset('pdf/mehun_katalog.pdf') }}" target="_blank"> Više &rarr; </a> </div>
+                    </li>
+                </ul>
+                <!-- Treći stupac/ikona -->
+                <ul class="column">
+                    <li class="item_content clearfix"> <a class="features_image"> <img src="images/ikone/galerija.png" alt="Galerija radova" /> </a>
+                        <div class="text">
+                            <h3>Galerija</h3>
+                            Galerija fotografija Mehun d.o.o. laboratorija <a href="{{ path('galerija') }}"> Više &rarr; </a> </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Linija
+            ================================================== -->
+            <div class="crta page_margin_top_section clearfix"> </div>
+
+            <!-- Tablica partneri
+            ================================================== -->
+
+            <table class="partners">
+                <tbody>
+                <tr>
+                    <td><a href="http://www.degudent.com"> <img src="images/degudent.jpg" alt="Degudent" width="150" height="75" /> </a></td>
+                    <td><a href="http://www.degudent-cadcam.com"> <img src="images/cercon.jpg" alt="Cercon" width="150" height="75" /> </a></td>
+                    <td><a href="http://www.dentsply.com"> <img src="images/dentsply.jpg" alt="Dentsply" width="150" height="75" /> </a></td>
+                    <td><a href="http://www.kiss-ceramics.com"> <img src="images/kiss.jpg" alt="Duceram Kiss" width="190" height="75" /> </a></td>
+                    <td><a href="http://www.interdent.hr"> <img src="images/interdent.jpg" alt="Interdent" width="150" height="75" /> </a></td>
+                    <td><a href="http://www.bredent.com"> <img src="images/bredent.jpg" alt="Bredent" width="150" height="75" /> </a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Najava box
+            ================================================== -->
+            <div class="announcement page_margin_top_section clearfix">
+                <ul class="columns no_width">
+                    <li class="column_left">
+                        <h1>Najsuvremenija tehnologija i visokokvalitetni materijali!</h1>
+                        <p>Laboratorij je opremljen najnovijom opremom za izradu svih fiksnih, mobilnih i protetskih radova u skladu sa željama pacijenata. </p>
+                    </li>
+                    <li class="column_right">
+                        <div class="vertical_align">
+                            <div class="vertical_align_cell"> <a title="Javite nam se još danas" href="{{ path('kontakt') }}" class="more dark medium"> Javite nam se još danas </a> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends '::base.html.twig' %}
+{% block title %}WAX UP | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, Wax Up, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Wax Up</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Usluge </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Wax Up </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>Usluga navoštavanja omogućava izradu svojevrsne „skice“ budućeg protetskog rada izrađenu kao „mock up“. Pomoću tako navoštanog rada pacijent stječe uvid u moguće rješenja njegove situacije u realnom 3D izgledu te mu se omogućava da svojom sugestijom utječe na definitivan izgled budućih zuba.<br>
+                            <br>
+                            Za izradu „wax upa“ potrebno je uzeti situacijski otisak prije bilo kakve intervencije u ustima. Na temelju ponuđenih rješenja, doktor dentalne medicine selektivno brusi postojeće zube kako bi se dobilo optimalno rješenje prihvatljivo svim stranama u postupku izrade protetskog nadomjestka. Također, pomoću „wax up“ metode dolazi se do izbora metode za finalni rad. Naravno, budući da se radi o potpuno individualiziranom pristupu, za izradu je potrebno malo više vremena.<br>
+                            <br>
+                            Postupak izrade „wax upa“ relativno je jednostavan, ali zahtijeva studiozan rad i stručno znanje kako bi krajnji rezultat bio prvorazredan. </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="images/wax_up.jpg" alt="dijagnostički wax up"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Kontaktirajte nas! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Pošaljite upit putem<a href="{{ path('kontakt') }}"> kontakt obrasca</a> </p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

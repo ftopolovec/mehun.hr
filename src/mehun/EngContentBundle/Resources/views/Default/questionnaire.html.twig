@@ -1,0 +1,46 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+
+<!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Questionnaire</h1>
+          <ul class="bread_crumb">
+            <li> <a href="#"> Documents</a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Questionnaire </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Tekst
+================================================== -->
+      <div class="page_margin_top">
+        <p> Below, there is a questionnaire, created for the purposes of advancement and improvement of our firm business. <br>
+          If you are familiar with Mehun d.o.o. dental laboratory's work so far, kindly take some time to fill in this questionnaire. <br>
+          Your answers will serve only for the purposes of our improvement and our clients' contentment. We thank you in advance!<br>
+          <br>
+        </p>
+
+<!-- Anketa
+================================================== -->
+      </div>
+      <div class="anketa">
+        <div class="anketni_list">
+        {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="alert alert-{{ label }}">
+                    {{ flash }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+         {{ form(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

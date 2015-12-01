@@ -1,0 +1,4 @@
+services:
+#    mehun_eng_content.example:
+#        class: mehun\EngContentBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

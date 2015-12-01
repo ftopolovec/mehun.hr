@@ -1,0 +1,81 @@
+{% extends '::base.html.twig' %}
+{% block title %}SMILE DESIGN | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, Smile Design, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Smile design</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Usluge </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Smile design </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p> U vrijeme kad su računala i računalni programi dostupni i sveprisutni, bilo bi šteta ne koristiti nešto od njihovih mnogobrojnih mogućnosti. Jedna od njih je i računalna simulacija budućeg izgleda Vaših zuba. Naime, postoje programi koji omogućavaju preklapanja slike ponuđenih estetskih rješenja umetnutih u Vaše lice. Tako se može u grubo predočiti odnosno simulirati kako će rad pristajati upravo Vama. Naravno, odstupanja su moguća jer izrada umjetnog zubala još je uvijek prije svega ručni rad i za sada ne postoji način da se to izvede bolje. Dakle, uz pomoć računala, racionalno vođena ljudska ruka proizvodi Vaše pomagalo.<br>
+                            <br>
+                            Nadomjestke izrađene uz pomoć računalne tehnologije potrebno je ipak dodatno individualizirati, a tu je čovjek još uvijek nezamjenjiv.<br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top">
+                        <!--<h3 class="box_header">
+                        Lista eventualno
+                        </h3>
+                        <ul class="list clearfix">
+                            <li class="icon_small_arrow square">
+                        Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="icon_small_arrow square">
+                        elum deus intercom
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Pallentesque est faucibus
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Velum deus intercom
+                            </li>
+                        </ul>-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="images/smile_design.jpg" alt="smile design"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Kontaktirajte nas! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Pošaljite upit putem<a href="{{ path('smile_design') }}"> kontakt obrasca</a> </p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

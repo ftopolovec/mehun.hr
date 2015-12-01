@@ -1,0 +1,77 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+<!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Contact</h1>
+          <ul class="bread_crumb">
+            <li> <a href="index_en.html" title="Home"> Home </a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Contact </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="contact_map page_margin_top html" id="map"> </div>
+      </div>
+
+<!-- Tekst
+================================================== -->
+      <div class="page_margin_top clearfix">
+        <div class="page_left">
+          <h3 class="box_header margin_top_10"> Contact form / Send us your questions </h3>
+          <div class="page_left">
+            <p class="text"> If you have any questions or you need information, fill in the contact form, and we will do our best to answer you as soon as possible. </p>
+          </div>
+
+<!-- Kontakt obrazac
+================================================== -->
+          {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="alert alert-{{ label }}">
+                    {{ flash }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+          {{ form(form) }}
+        </div>
+
+<!-- Kontakt info
+================================================== -->
+        <div class="page_right">
+          <h3 class="box_header margin_top_10"> MEHUN d.o.o. </h3>
+          <p>Dental technique laboratory </p>
+          <ul class="contact_data page_margin_top">
+            <li class="clearfix">
+              <p class="value"> <strong>Address:</strong><br>
+                Ivana Mazuranica 70, Varazdin, Croatia </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> Tel. | <strong>+385 42 240 366</strong><br>
+                Mobile | <strong>+385 98 267 140 </strong><br>
+                Fax | <strong>+385 42 204 860</strong><br>
+                E-mail | <strong>info@mehun.hr</strong> </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> <strong>Working hours:</strong><br>
+                Mon. - Thu. | 8:00 am - 20:00 pm<br>
+                Friday | 8:00 am - 15:00 pm<br>
+              </p>
+            </li>
+            <li class="clearfix">
+              <p class="value"> <strong>OIB</strong>: 56146674125<br>
+                <strong>MBS</strong>: 01984047<br>
+                <strong>Bank account</strong>: Hypo Alpe Adria Bank d.d. <br>
+                2500009-1101204849<br>
+                <strong>IBAN</strong>: HR3425000091101204849 </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

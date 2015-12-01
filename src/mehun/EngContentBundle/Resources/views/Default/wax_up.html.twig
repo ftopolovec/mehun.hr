@@ -1,0 +1,54 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Wax Up</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Services </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Wax Up </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>Waxing up enables a "draft" constructing of a future prosthetic work that is made as a "mock up". With such waxed up work, in a real 3-D form,  a patient can see how his problem can be solved and he can also make suggestions about a final outlook of his teeth. <br>
+                            <br>
+                            For making a "wax up" it is necessary to take a dental impression before making any intervention in a patient's mouth. When a dentist has several possible solutions before him, he will selectively grind existing teeth, so that both sides involved in making a prosthetic replacement can enjoy the best possible solution. Also, with a "wax up" method we choose a method for final work. Of course, since this is a completely individualized approach, work requires a little more time.<br>
+                            <br>
+                            Process of making a "wax up" is relatively simple, but it requires a thorough work and expert knowledge so that the final result would be excellent. </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="{{ asset('images/wax_up.jpg') }}" alt="dijagnostički wax up"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Contact us! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends '::base.html.twig' %}
+{% block title %}ANKETNI UPITNIK | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, anketni upitnik, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+  <div class="page relative">
+    <div class="page_layout page_margin_top clearfix">
+      <div class="page_header clearfix">
+        <div class="page_header_left">
+          <h1 class="page_title">Anketni upitnik</h1>
+          <ul class="bread_crumb">
+            <li> <a href="#"> Dokumenti </a> </li>
+            <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+            <li> Anketni upitnik </li>
+          </ul>
+        </div>
+      </div>
+<!-- Tekst
+================================================== -->
+      <div class="page_margin_top">
+        <p> U nastavku je anketni upitnik kreiran u svrhu unaprijeđenja i poboljšanja poslovanja naše tvrke. <br>
+          Ukoliko ste upoznati sa dosadašnjim radom laboratorija Mehun d.o.o., molimo Vas da izdvojite malo vremena i ispunite ovaj kratki upitnik. <br>
+          Vaši će odgovori služiti isključivo za potrebe poboljšanja zadovoljstva korisnika naših proizvoda i usluga. Unaprijed hvala na suradnji!<br>
+          <br>
+        </p>
+
+<!-- Anketa
+================================================== -->
+      </div>
+      <div class="anketa">
+        <div class="anketni_list">
+        {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="alert alert-{{ label }}">
+                    {{ flash }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        {{ form(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

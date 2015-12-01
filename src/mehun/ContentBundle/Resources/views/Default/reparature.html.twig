@@ -1,0 +1,58 @@
+{% extends '::base.html.twig' %}
+{% block title %}REPARATURE | Mehun d.o.o.{% endblock %}
+{% block metatags %}
+    <meta name="keywords" content="MEHUN, reparature, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
+    <meta name="description" content="Mehun d.o.o. | poduzeće za zdravstvenu djelatnost zubotehničkog laboratorija" />
+{% endblock %}
+{% block body %}
+    <!-- Breadcrumbs
+================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Reparature</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Usluge </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Reparature </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>Lom proteze za čovjeka koji je koristi svakako nije najugodnije iskustvo. Djelatnici Mehun d.o.o. međutim s lakoćom popravljaju slomljene proteze i vraćaju ih u prvobitno stanje. <br>
+                            Lom proteze nije samo puki popravak, to je svojevrsna restauracija proteze gdje nakon naše intervencije proteza izgleda kao nova, u funkcionalnom i estetskom smislu. <br>
+                            <br>
+                            Jedini smo laboratorij koji popravlja slomljene metalne proteze jer posjedujemo specijalnu tehnologiju plazma varenja takvih proteza. Uz to, protezama vraćamo „visoki sjaj“ kako bi izgledale i služile „kao nove“. </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="images/reparature.jpg" alt="reparature"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Kontaktirajte nas! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Pošaljite upit putem<a href="{{ path('kontakt') }}"> kontakt obrasca</a> </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

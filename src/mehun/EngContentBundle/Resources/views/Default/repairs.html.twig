@@ -1,0 +1,52 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Denture repairs</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Services </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Denture repairs </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>When a denture breaks, that is not a pleasant experience for a person who wears it. But employees of Mehun d.o.o. will easily repair every broken denture and make it look and feel as good as new. When a denture breaks, we don't see it as something that just needs to be repaired; to us, it is a restoration of a denture that looks completely new after our work, both functionally and esthetically. <br>
+                            <br>
+                            We are the only laboratory that does repairs on metal dentures, because we have special technology called plasma welding that is used for such dentures. Also, we bring back burnish to old dentures so they look and serve their owners as new ones. </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="{{ asset('images/reparature.jpg') }}" alt="reparature"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Contact us! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

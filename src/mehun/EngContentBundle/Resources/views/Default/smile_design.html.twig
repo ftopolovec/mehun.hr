@@ -1,0 +1,78 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Smile design</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Services </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Smile design </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p> Today, when computers and computer programs are available to everyone and are all-present, it would be a pity not to use their numerous possibilities. One of those possibilities is a computer simulated outlook of your future teeth. There are programs that enable overlapping of photographs of esthetic solutions for your teeth that are inserted into a photograph of your face. By this simulation, you can see how the final work will look on your face. Of course, there is a deviation possibility because making a denture is still a handwork and for now, there is no other way to do it better. So, with a help of a computer, what produces your aid is rationally led human hand.<br>
+                            <br>
+                            Replacements that have been produced with computer technology require additional individualization and there, human hand is irreplaceable. <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top">
+                        <!--<h3 class="box_header">
+                        Lista eventualno
+                        </h3>
+                        <ul class="list clearfix">
+                            <li class="icon_small_arrow square">
+                        Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="icon_small_arrow square">
+                        elum deus intercom
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Pallentesque est faucibus
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="icon_small_arrow square">
+                        Velum deus intercom
+                            </li>
+                        </ul>-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="{{ asset('images/smile_design.jpg') }}" alt="smile design"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Contact us! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

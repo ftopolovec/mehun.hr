@@ -1,0 +1,14 @@
+mehun_eng_content:
+    resource: "@mehunEngContentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mehun_content:
+    resource: "@mehunContentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+elfinder:
+    resource: "@FMElfinderBundle/Resources/config/routing.yml"
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

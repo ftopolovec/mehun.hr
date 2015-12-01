@@ -1,0 +1,56 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Price list</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Documents </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Price list </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tekst
+            ================================================== -->
+            <div>
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>By browsing through our price list, you can always be acquainted with actual product prices and services that Mehun d.o.o. dental laboratory offers. If you have any questions or if you need any information, please contact us. <br>
+                            <br>
+                            <strong>Download and browse <a target="_blank" href="{{ asset('pdf/mehun_cjenik.pdf') }}"> the price list in PDF format</a></strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontakt info box
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <ul>
+                    <li class="home_box green">
+                        <h2> <a href="{{ path('contact') }}" title="Kontakt"> Location and contact </a> </h2>
+                        <div class="news clearfix">
+                            <p class="text"> Ivana Mažuranica 70, 42000 Varazdin<br>
+                                Phone: +385 42 240 366<br>
+                                Mobile phone: +385 98 267 140<br>
+                                Fax: +385 42 204 860</p>
+                        </div>
+                    <li class="sidebar_box">
+                        <ul class="contact_data">
+                            <li class="clearfix"> <span class="social_icon mail"></span>
+                                <p class="value"> e-mail: info@mehun.hr </p>
+                            </li>
+                            <li class="clearfix"> <span class="social_icon form"></span>
+                                <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

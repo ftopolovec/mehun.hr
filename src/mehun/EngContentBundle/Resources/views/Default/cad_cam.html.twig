@@ -1,0 +1,58 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">CAD/CAM</h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Services </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> CAD/CAM </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+                <!-- Tekst
+               ================================================== -->
+                <div class="page_left page_margin_top">
+                    <div class="column_left">
+                        <p>"Designed and produced with a help of a computer" – this is a loose description of the CAD/CAM abbreviation. Our laboratory is equipped with two systems of a Cercon brain line. It enables us to independently produce zirconium oxide crowns, bridges, individual extensions for several implant systems, and telescope crowns that are made of strictly controlled and patent registered material named cercon, by one of the world's leading manufacturers of structural ceramics, a German-American corporation <strong><a target="_blank" href="http://www.densply.com">Dentsply</a></strong>. <br>
+                            <br>
+                            Our colleagues, <strong>Ante Bubalo</strong> and <strong>Kristijan Mehun</strong> were educated in Germany to become experts in CAD/CAM works. <br>
+                            <br>
+                            Besides constructions for ceramics coating, in our offer we also have structural ceramics, so called Full Anatomic HT Cercon. This technique's advantage is that it requires only a minimally invasive preparation and the replacements are highly functional. It is particularly applicable for the side teeth. <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Slika
+                    ================================================== -->
+                    <div class="column_left page_margin_top"> </div>
+                </div>
+            </div>
+            <div class="page_right page_margin_top"> <img src="{{ asset('images/cad_cam.jpg') }}" alt="cad cam"/> </div>
+
+            <!-- Kontakt info
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <h4 class="info"> Contact us! </h4>
+                <ul class="contact_data">
+                    <li class="clearfix"> <span class="social_icon mail"></span>
+                        <p class="value"> e-mail: info@mehun.hr </p>
+                    </li>
+                    <li class="clearfix"> <span class="social_icon form"></span>
+                        <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</p>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

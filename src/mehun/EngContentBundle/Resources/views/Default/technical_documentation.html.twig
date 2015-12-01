@@ -1,0 +1,59 @@
+{% extends '::baseEng.html.twig' %}
+{% block body %}
+    <!-- Breadcrumbs
+    ================================================== -->
+    <div class="page relative">
+        <div class="page_layout page_margin_top clearfix">
+            <div class="page_header clearfix">
+                <div class="page_header_left">
+                    <h1 class="page_title">Technical documentation </h1>
+                    <ul class="bread_crumb">
+                        <li> <a href="#"> Documents </a> </li>
+                        <li class="separator icon_small_arrow right_gray"> &nbsp; </li>
+                        <li> Technical documentation </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+                <!-- Tekst
+                ================================================== -->
+                <div class="column_left page_margin_top">
+                    <ul class="list clearfix">
+                        <li class="icon_small_arrow square">
+                            <strong><a href="{{ asset('pdf/brosura_duceram_kiss.pdf') }}" target="_blank">Duceram Kiss brochure</a></strong>
+                        </li>
+                        <li class="icon_small_arrow square">
+                            <strong><a href="{{ asset('pdf/cercon_base_declaration_of_conformity.pdf') }}" target="_blank">Cercon Base Declaration of Conformity</a></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kontakt info box
+            ================================================== -->
+            <div class="page_right page_margin_top">
+                <ul>
+                    <li class="home_box green">
+                        <h2> <a href="{{ path('contact') }}" title="Kontakt"> Location and contact </a> </h2>
+                        <div class="news clearfix">
+                            <p class="text"> Ivana Mazuranica 70, 42000 Varazdin<br>
+                                Tel.: +385 42 240 366<br>
+                                Mob.: +385 98 267 140<br>
+                                Fax: +385 42 204 860</p>
+                        </div>
+                    <li class="sidebar_box">
+                        <ul class="contact_data">
+                            <li class="clearfix"> <span class="social_icon mail"></span>
+                                <p class="value"> e-mail: info@mehun.hr </p>
+                            </li>
+                            <li class="clearfix"> <span class="social_icon form"></span>
+                                <p class="value"> Use <a href="{{ path('contact') }}"> contact form</a> to send us your question</a> </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

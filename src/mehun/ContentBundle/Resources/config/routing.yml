@@ -1,0 +1,90 @@
+mehun_content_cms_page:
+    resource: "@mehunContentBundle/Resources/config/routing/page.yml"
+    prefix:   /cms/page
+
+mehun_content_cms_category:
+    resource: "@mehunContentBundle/Resources/config/routing/category.yml"
+    prefix:   /cms/category
+
+mehun_content_cms_user:
+    resource: "@mehunContentBundle/Resources/config/routing/user.yml"
+    prefix:   /cms/user
+
+mehun_content_homepage:
+    path: /
+    defaults: { _controller: mehunContentBundle:Default:index }
+
+mehun_content_page_display:
+    path: /page/{id}
+    defaults: { _controller: mehunContentBundle:Default:display }
+
+login:
+   path: /login
+   defaults: { _controller: mehunContentBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
+
+o_nama:
+    path: /o_nama
+    defaults: { _controller: mehunContentBundle:Default:onama }
+
+reparature:
+    path: /reparature
+    defaults: { _controller: mehunContentBundle:Default:reparature }
+
+cad_cam:
+    path: /cad_cam
+    defaults: { _controller: mehunContentBundle:Default:cad_cam }
+
+wax_up:
+    path: /wax_up
+    defaults: { _controller: mehunContentBundle:Default:wax_up }
+
+smile_design:
+    path: /smile_design
+    defaults: { _controller: mehunContentBundle:Default:smile_design }
+
+galerija:
+    path: /galerija
+    defaults: { _controller: mehunContentBundle:Default:galerija }
+
+partneri:
+    path: /partneri
+    defaults: { _controller: mehunContentBundle:Default:partneri }
+
+cjenik:
+    path: /cjenik
+    defaults: { _controller: mehunContentBundle:Default:cjenik }
+
+certifikati:
+    path: /certifikati
+    defaults: { _controller: mehunContentBundle:Default:certifikati }
+
+politika_kvalitete:
+    path: /politika_kvalitete
+    defaults: { _controller: mehunContentBundle:Default:politika_kvalitete }
+
+tehnicka_dokumentacija:
+    path: /tehnicka_dokumentacija
+    defaults: { _controller: mehunContentBundle:Default:tehnicka_dokumentacija }
+
+anketni_upitnik:
+    path: /anketni_upitnik
+    defaults: { _controller: mehunContentBundle:Default:anketni_upitnik }
+
+anketa_forma:
+    path: /anketa_forma
+    defaults: { _controller: mehunContentBundle:Default:anketni_upitnik }
+
+kontakt:
+    path: /kontakt
+    defaults: { _controller: mehunContentBundle:Default:kontakt }
+
+kontakt_forma:
+    path: /kontakt_forma
+    defaults: { _controller: mehunContentBundle:Default:kontakt }
+
