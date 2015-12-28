@@ -15,10 +15,15 @@ class PageType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('abstract')
-            ->add('updated')
+            ->add('title', null, array('label' => 'Naslov objave'))
+            ->add('abstract', 'textarea', array('label' => 'Kratki opis objave do 255 znakova'))
+            ->add('updated', 'date', array(
+                'label' => 'Datum objave posta',
+                'input' => 'datetime',
+                'html5' => 'true'
+            ))
             ->add('content', 'ckeditor', array(
+                'label' => 'Sadržaj (Maksimalna širina slike je 600px i 3MB)',
                 'config' => array(
                     'filebrowser_image_browse_url' => array(
                         'route' => 'elfinder',
@@ -28,7 +33,7 @@ class PageType extends AbstractType
                     //...
                 ),
             ))
-            ->add('category')
+            ->add('category', null, array('label' => 'Odaberite kategoriju objave'))
         ;
     }
     

@@ -79,7 +79,7 @@ class MySurveyType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $collectionConstraint = new Collection(array(
-            'org_jedinica' => array(
+            'organizacijska_jedinica' => array(
                 new NotBlank(array('message' => 'Ovo polje ne smije biti prazno!')),
                 new Length(array('min' => 2))
             ),
@@ -87,22 +87,22 @@ class MySurveyType extends AbstractType
                 new NotBlank(array('message' => 'Ovo polje ne smije biti prazno!')),
                 new Email(array('message' => 'Neispravna email adresa.'))
             ),
-            'kvaliteta' => array(
+            'zadovoljstvo_kvalitetom' => array(
                 new NotBlank(array('message' => 'Morate odabrati jednu opciju!')),
             ),
-            'cijena_usluga' => array(
+            'omjer_cijena-usluga' => array(
                 new NotBlank(array('message' => 'Morate odabrati jednu opciju!')),
             ),
-            'informiranost' => array(
+            'informiranost_o_ponudi_laboratorija' => array(
                 new NotBlank(array('message' => 'Morate odabrati jednu opciju!')),
             ),
-            'primjedbe_proizvodi' => array(
+            'primjedbe_na_proizvode' => array(
                 new Length(array('max' => 500)),
             ),
-            'primjedbe_poslovni_stav' => array(
+            'primjedbe_na_poslovni_stav' => array(
                 new Length(array('max' => 500)),
             ),
-            'zakljucak_sugestija' => array(
+            'zakljucak_ili_sugestija' => array(
                 new Length(array('max' => 500)),
             )
         ));

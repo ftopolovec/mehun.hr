@@ -29,6 +29,13 @@
 	color: #FFF;
 	float: right;
 }
+.preheader_site {
+	padding-top: 20px;
+	padding-left: 10px;
+	font-family: 'Istok Web';
+	color: #FFF;
+	float: left;
+}
 body {
 	/*background: #D8D8D8;*/
 	background: url('../images/background.png') repeat;

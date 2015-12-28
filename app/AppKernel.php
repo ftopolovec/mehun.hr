@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new FM\ElfinderBundle\FMElfinderBundle(),
             new mehun\EngContentBundle\mehunEngContentBundle(),
+            new Nomaya\SocialBundle\NomayaSocialBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

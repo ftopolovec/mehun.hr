@@ -1,4 +1,4 @@
-{% extends '::base.html.twig' %}
+{% extends '::baseEng.html.twig' %}
 {% block title %}{{ page.title }} | Mehun d.o.o.{% endblock %}
 {% block metatags %}
     <meta name="keywords" content="MEHUN, stomatologija, zubotehnički, laboratorij, dental, dentalne ordinacije, Varaždin, zubni tehničar, zubotehnički laboratorij, zubni, most, cirkon oksid, zubi, implantati, metal-keramika, bezmetalna keramika, inlay, krunica, eclipse, proteza, KISS"/>
@@ -28,6 +28,7 @@
                         <h4>Category: {{ page.category.name }}</h4><br>
                         <h5>Published: {{ page.updated|date('d-m-Y H:i:s') }}</h5>
                         {{ page.content|raw }}
+                        <p>{{ facebookButton({'facebook': {'locale':'en_EN'}}) }}</p>
                     </div>
                 </div>
             </div>

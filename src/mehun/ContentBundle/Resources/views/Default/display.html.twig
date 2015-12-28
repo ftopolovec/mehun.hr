@@ -28,6 +28,7 @@
                         <h4>Kategorija: {{ page.category.name }}</h4><br>
                         <h5>Objavljeno: {{ page.updated|date('d-m-Y H:i:s') }}</h5>
                         {{ page.content|raw }}
+                        <p>{{ facebookButton() }}</p>
                     </div>
                 </div>
             </div>

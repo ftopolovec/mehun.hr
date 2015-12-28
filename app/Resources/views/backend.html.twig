@@ -47,7 +47,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="index.html"><span>CMS | Mehun.hr</span></a>
+            <a class="brand" href="{{ path('cms_page') }}"><span>CMS | Mehun.hr</span></a>
 
             <!-- start: Header Menu -->
             <div class="nav-no-collapse header-nav">
@@ -84,11 +84,13 @@
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
                     {% if is_granted('ROLE_ADMIN') %}
-                    <li><a href="{{ path('cms_page') }}"><i class="icon-edit"></i><span class="hidden-tablet">Objave</span></a></li>
-                        <li><a href="{{ path('cms_pageeng') }}"><i class="icon-edit"></i><span class="hidden-tablet">Posts</span></a></li>
+                    <li>
+                        <a href="{{ path('cms_page') }}"><i class="icon-edit"></i><span class="hidden-tablet">Objave</span></a></li>
                         <li><a href="{{ path('cms_category') }}"><i class="icon-align-justify"></i><span class="hidden-tablet">Kategorije</span></a></li>
-                        <li><a href="{{ path('cms_categoryeng') }}"><i class="icon-align-justify"></i><span class="hidden-tablet">Categories</span></a></li>
                         <li><a href="{{ path('cms_user') }}"><i class="icon-user"></i><span class="hidden-tablet">Korisnici</span></a></li>
+                        <li><br><br><br></li>
+                        <li><a href="{{ path('cms_pageeng') }}"><i class="icon-edit"></i><span class="hidden-tablet">Posts</span></a></li>
+                        <li><a href="{{ path('cms_categoryeng') }}"><i class="icon-align-justify"></i><span class="hidden-tablet">Categories</span></a></li>
                         <li><a href="{{ path('mehun_content_homepage') }}"><i class="icon-home"></i><span class="hidden-tablet">Povratak na stranicu</span></a></li>
                     {% elseif is_granted('ROLE_USER')%}
                         <li><a href="{{ path('cms_page') }}"><i class="icon-edit"></i><span class="hidden-tablet">Objave</span></a></li>
